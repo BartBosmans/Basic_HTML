@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .background{
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <!-- Headings -->
+  <h1>Hello world!</h1>
+  <h2>Hello world!</h2>
+  <h3>Hello world!</h3>
+  <h4>Hello world!</h4>
+  <h5>Hello world!</h5>
+  <h6>Hello world!</h6>
+
+  <hr>
+  <!-- Paragraphs -->
+  <div>
+    <p title="This is a tooltip">This is a paragraph.<br> This is another sentence.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus ipsum quisquam veritatis voluptatem quae in fugiat aut, accusantium ex itaque illum molestiae eius ipsa explicabo soluta incidunt possimus harum?</p>
+    <p>Lorem ipsum dolor sit <strong>amet</strong> <em>consectetur</em>consectetur adipisicing elit. Et minus ipsum quisquam veritatis <mark>voluptatem</mark>voluptatem quae in fugiat aut, <del>accusantium</del> ex itaque illum <span style="color:red;">molestiae eius ipsa explicabo soluta incidunt </span>possimus harum?</p>
+    <p class="background">Lorem <ins>ipsum</ins> dolor sit amet consectetur adipisicing elit. Et minus ipsum <sub>quisquam</sub> veritatis voluptatem quae in fugiat aut, <sup>accusantium</sup> ex itaque illum molestiae eius ipsa explicabo soluta incidunt possimus harum?</p>
+  </div>
+  <!-- Image and bookmark -->
+  <a href="#bookmark">
+    <img src="banner.png" alt="alternate discription here" width="400">
+  </a>
+  <br>
+  <a href="https://www.google.com" target="_blank">Google</a>
+
+  
+
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+    <li>List item 6</li>
+  </ul>
+  <ol type="1" start="25">
+    <li>List item 1</li>
+      <ul>
+        <li>Sub bullet 1</li>
+        <li>Sub bullet 2</li>
+      </ul>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+    <li>List item 6</li>
+  </ol>
+
+  <br><hr><br>
+
+<!-- Table -->
+  <table>
+    <caption>This is a caption</caption>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bart</td>
+        <td>Bosmans</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>35</td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jill Smith</td>
+        <td>555-555-5555</td>
+        <td>777-777-7777</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <tr>
+      <th>Name:</th>
+      <td>Jill Smith</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th>
+      <td>555-555-5555</td>
+    </tr>
+    <tr>
+      <td>777-777-7777</td>
+    </tr>
+  </table>
+
+  <br><hr><br>
+  <!-- Form example -->
+  <form action="server.php">
+    <fieldset>
+      <legend>Personal information:</legend>
+      First Name: <br>
+      <input type="text" name="firstname" value="" placeholder="First Name Here"><br>
+      Last Name: <br>
+      <input type="text" name="lastname" value=""><br>
+      <input type="radio" name="options"> Option1
+      <input type="radio" name="options"> Option2<br>
+      <input type="checkbox" name="checkboxes" checked> Checkbox 1
+      <input type="checkbox" name="checkboxes"> Checkbox 2
+      <input type="checkbox" name="checkboxes"> Checkbox 3<br>
+      
+      <label for="carSelect">Select:</label>
+      <select name="cars" id="carSelect" multiple>
+        <option value="BMW">BMW</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Audi">Audi<option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+  <!-- button -->
+  <button>Click Me</button>
+  <!-- Bookmarked paragraph -->
+  <p id="bookmark">This is a paragraph</p>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
